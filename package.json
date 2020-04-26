@@ -1,0 +1,26 @@
+{
+  "name": "wx",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "integration-test": "mocha -r chai/register-expect -r test/integration/config.js --recursive ./test/integration/*.js --exit",
+    "test": "mocha -r chai/register-expect -r test/unit/config.js --recursive test/unit/*.js --exit"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "big.js": "^5.2.2",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-async-handler": "^1.1.4",
+    "http-errors": "~1.6.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^7.1.1",
+    "sinon": "^9.0.1",
+    "sinon-chai": "^3.5.0"
+  }
+}
